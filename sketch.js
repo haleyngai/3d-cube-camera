@@ -1,5 +1,3 @@
-let socket = io();
-
 let myLocalVideo = null; 
 let remoteVideos = []; 
 let p5lm = null; 
@@ -7,7 +5,7 @@ let p5lm = null;
 function setup() {
   createCanvas(800, 700, WEBGL); 
   textSize(14);
-  stroke(255,24,55);
+  stroke(173, 216, 244);
   strokeWeight(2);
 
   myLocalVideo = createCapture(VIDEO, gotLocalStream);
